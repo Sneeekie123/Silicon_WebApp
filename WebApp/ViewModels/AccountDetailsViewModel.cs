@@ -41,10 +41,10 @@ public class AccountAddressInfo
     [Required]
     public string AddressLine_1 { get; set; } = null!;
 
-    [Display(Name = "AddressLine_´2", Prompt = "Enter your second address line")]
+    [Display(Name = "AddressLine_2 (optional)", Prompt = "Enter your second address line")]
     public string? AddressLine_2 { get; set; }
 
-    [Display(Name = "Postal code", Prompt = "Enter your postal code")]
+    [Display(Name = "Postal Code", Prompt = "Enter your postal code")]
     [Required]
     public string PostalCode { get; set; } = null!;
 

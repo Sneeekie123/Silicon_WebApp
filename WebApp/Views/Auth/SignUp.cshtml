@@ -29,7 +29,7 @@
                     <input asp-for="LastName">
                     <span asp-validation-for="LastName"></span>
                 </div>
-                <div id="form-content" class="input-group">
+                <div id="form-email" class="input-group">
                     <label asp-for="Email"></label>
                     <input asp-for="Email">
                     <span asp-validation-for="Email"></span>
@@ -46,14 +46,15 @@
                 </div>
 
                 <div id="form-remember" class="checkbox-group">
-                    <input asp-for="TermsAndConditions">
-                    <label asp-for="TermsAndConditions"></label>
+                    <div id="input-group">
+                        <input asp-for="TermsAndConditions">
+                        <label asp-for="TermsAndConditions"></label>
+                    </div>
+                    <span asp-validation-for="TermsAndConditions"></span>
                 </div>
-                <span asp-validation-for="TermsAndConditions"></span>
                 <div id="form-button">
-                    <button id="form-button" class="btn-theme" type="submit"><i class="fa-regular fa-arrow-left-to-bracket"></i>Sign up</button>
+                    <button class="btn btn-theme" type="submit"><i class="fa-regular fa-arrow-left-to-bracket"></i>Sign up</button>
                 </div>
-                <a id="forgot-password" asp-page="/forgot">Forgot your password?</a>
             </div>
         </form>
 
