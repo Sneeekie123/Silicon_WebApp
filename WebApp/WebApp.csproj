@@ -9,8 +9,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\brands\" />
-    <Folder Include="wwwroot\images\courses\" />
-    <Folder Include="wwwroot\images\icons\" />
     <Folder Include="wwwroot\images\logos\" />
     <Folder Include="wwwroot\images\other\" />
   </ItemGroup>
@@ -21,6 +19,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
