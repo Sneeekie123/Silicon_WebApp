@@ -3,19 +3,28 @@
     ViewData["Title"] = "Account Details";
 }
 
+<sec
+
+
+
 <section class="account-details">
     <div class="container">
-        @if (!string.IsNullOrEmpty(TempData["StatusMessage"]?.ToString()))
-        {
-            <div class="alert alert-danger">
-                @TempData["StatusMessage"]
-            </div>
-        }
+
+        <aside>
+            <partial name="~/Views/Account/_AccountProfile.cshtml" />
+        </aside>
+
+        <div class="content">
+                @if (!string.IsNullOrEmpty(TempData["StatusMessage"]?.ToString()))
+                {
+                <div class="alert alert-danger">
+                        @TempData["StatusMessage"]
+                </div>
+                }
 
         <form class="form-basic" method="post" asp-action="UpdateBasicInfo" asp-controller="Account">
             <h5>Basic Info</h5>
-
-            <div class="content">
+            <div class="form-content">
                 <div id="form-firstname" class="input-group">
                     <label asp-for="Basic!.FirstName"></label>
                     <input asp-for="Basic!.FirstName">
@@ -50,7 +59,7 @@
         <form class="form-address" method="post" asp-action="UpdateAddressInfo" asp-controller="Account">
             <h5>Address Info</h5>
 
-            <div class="content">
+            <div class="form-content">
                 <div id="form-addressline-1" class="input-group">
                     <label asp-for="Address!.AddressLine_1!"></label>
                     <input asp-for="Address!.AddressLine_1!">
@@ -76,5 +85,8 @@
                 </div>
             </div>
         </form>
+
+        </div>
+
     </div>
 </section>
