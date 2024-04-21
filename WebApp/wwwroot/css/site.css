@@ -279,6 +279,7 @@ h6 {
 .btn-circle-sm {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 }
 
 .btn-circle {
@@ -544,6 +545,120 @@ form .field-validation-error {
   font-size: 14px;
   font-weight: 400 !important;
   color: red;
+}
+
+.account-details .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.account-details .container .left-profile {
+  display: block;
+  border-right: 1px solid var(--color-gray-300);
+}
+.account-details .container .content {
+  display: block;
+  margin-left: 60px;
+}
+.account-details .container .content .form-basic h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color-theme);
+}
+.account-details .container .content .form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: "firstname lastname" "email phone" "bio bio";
+}
+.account-details .container .content .form-content .form-button {
+  display: flex;
+}
+.account-details .container .content .form-content .form-button .btn-theme {
+  margin-left: 15px;
+}
+.account-details .container .content #form-firstname {
+  grid-area: firstname;
+}
+.account-details .container .content #form-lastname {
+  grid-area: lastname;
+}
+.account-details .container .content #form-email {
+  grid-area: email;
+}
+.account-details .container .content #form-phone {
+  grid-area: phone;
+}
+.account-details .container .content #form-bio {
+  grid-area: bio;
+}
+.account-details .container .content #form-bio textarea {
+  height: 100px;
+}
+.account-details .container .content .form-address {
+  margin-top: 60px;
+  border-top: 1px solid var(--color-gray-300);
+}
+.account-details .container .content .form-address h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color-theme);
+}
+.account-details .container .content .form-content-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: "addressline-1 addressline-1" "addressline-2 addressline-2" "postalcode city";
+}
+.account-details .container .content .form-content-2 .form-button {
+  display: flex;
+}
+.account-details .container .content .form-content-2 .form-button .btn-theme {
+  margin-left: 15px;
+}
+.account-details .container .content #form-addressline-1 {
+  grid-area: addressline-1;
+}
+.account-details .container .content #form-addressline-2 {
+  grid-area: addressline-2;
+}
+.account-details .container .content #form-postalcode {
+  grid-area: postalcode;
+}
+.account-details .container .content #form-city {
+  grid-area: city;
+}
+
+.account-profile .profile .profile-image {
+  position: relative;
+  margin-left: 40px;
+}
+.account-profile .profile .profile-image img {
+  border-radius: 50%;
+}
+.account-profile .profile .profile-image form {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  margin-bottom: 20px;
+}
+.account-profile .profile .profile-info h3 {
+  text-align: center;
+}
+.account-profile .profile .profile-info p {
+  text-align: center;
+}
+.account-profile .profile .left-account-buttons {
+  margin-top: 10px;
+}
+.account-profile .profile .left-account-buttons .btn-theme {
+  width: 95%;
+  justify-content: start;
+}
+.account-profile .profile .left-account-buttons .btn-theme p {
+  margin-left: 20px;
+}
+.account-profile .profile .left-account-buttons .btn-theme img {
+  align-content: start;
 }
 
 .courses {

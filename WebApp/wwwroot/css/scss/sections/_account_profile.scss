@@ -1,0 +1,53 @@
+.account-profile {
+
+
+    .profile {
+        .profile-image {
+            position: relative;
+            margin-left: 40px;
+
+
+            img {
+                border-radius: 50%;
+            }
+
+            form {
+                position: absolute;
+                bottom: 0;
+                left: 180px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .profile-info {
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .left-account-buttons {
+            margin-top: 10px;
+            
+
+
+            .btn-theme {
+                width: 95%;
+                justify-content: start;
+                
+
+                p {
+                    margin-left: 20px;
+                }
+
+                img {
+                    align-content: start;
+                }
+            }
+        }
+    }
+}

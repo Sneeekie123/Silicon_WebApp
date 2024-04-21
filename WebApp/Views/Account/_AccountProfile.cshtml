@@ -9,7 +9,7 @@
             <div class="profile-image">
                 <img src="~/images/uploads/profiles/@user.ProfileImage" alt="@user.FirstName @user.LastName" />
 
-                <form enctype="multipart/form-data" method="post" asp-action="UploadProfileImage" asp-controller="Account">
+                <form class="image-btn" enctype="multipart/form-data" method="post" asp-action="UploadProfileImage" asp-controller="Account">
                     <input id="fileUploader" type="file" name="file" hidden />
                     <label for="fileUploader" class="btn btn-circle btn-circle-sm"><i class="fa-regular fa-refresh"></i></label>
                 </form>
@@ -17,6 +17,39 @@
             <div class="profile-info">
                 <h3 class="displayname">@user.FirstName @user.LastName</h3>
                 <p>@user.Email</p>
+            </div>
+            <div class="left-account-buttons">
+                <a class="btn btn-theme">
+                    <img src="~/images/icons/bx-cog.svg" alt="">
+                    <p>
+                        Account Details
+                    </p>
+                </a>
+            </div>
+            <div class="left-account-buttons">
+                <a class="btn btn-theme">
+                    <img src="~/images/icons/bx-lock-alt.svg" alt="">
+                    <p>
+                        Security
+                    </p>
+                </a>
+            </div>
+            <div class="left-account-buttons">
+                <a class="btn btn-theme">
+                    <img src="~/images/icons/bookmark.svg" alt="">
+                    <p>
+                        Saved Courses
+                    </p>
+                </a>
+            </div>
+            <div class="left-account-buttons">
+                <a asp-action="Signout" asp-controller="Auth" class="btn btn-theme">
+                    <img src="~/images/icons/bx-log-out.svg" alt="">
+                    <p>
+                        Sign Out
+                    </p>
+                    
+                </a>
             </div>
         </div>
     </section>
