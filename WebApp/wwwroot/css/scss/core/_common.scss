@@ -18,14 +18,3 @@ body {
     background-color: var(--color-gray-000);
 }
 
-.wrapper {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-img {
-    width: 3%;
-    height: 3%;
-    object-fit: cover;
-}

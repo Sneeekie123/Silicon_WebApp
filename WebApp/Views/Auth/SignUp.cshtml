@@ -4,7 +4,7 @@
 }
 
 
-<section id="signup">
+<section class="signup">
     <div class="container">
 
         @if (!string.IsNullOrEmpty(ViewData["StatusMessage"]?.ToString()))
@@ -18,7 +18,7 @@
             <h1>Create Account</h1>
             <p>Already have an account? <a asp-action="SignIn" asp-controller="Auth">Sign in here</a>.</p>
 
-            <div class="content">
+            <div class="form-content">
                 <div id="form-firstname" class="input-group">
                     <label asp-for="FirstName"></label>
                     <input asp-for="FirstName">
@@ -45,7 +45,7 @@
                     <span asp-validation-for="ConfirmPassword"></span>
                 </div>
 
-                <div id="form-remember" class="checkbox-group">
+                <div id="form-checkbox" class="checkbox-group">
                     <div id="input-group">
                         <input asp-for="TermsAndConditions">
                         <label asp-for="TermsAndConditions"></label>

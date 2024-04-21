@@ -6,22 +6,23 @@
 <section class="courses">
     <div class="container">
         <h1>Courses</h1>
-        <form id="form-filters">
-            <select>
-                <option>All categories</option>
-            </select>
-            <div class="input-search-group">
-                <input id="searchQuery" name="searchQuery" placeholder="Search courses"/>
-                <i class="fa-regular fa-search"></i>
-            </div>
-        </form>
+        <div class="header">
+            <form id="form-filters">
+                <select>
+                    <option>All categories</option>
+                </select>
+                <div class="input-search-group">
+                    <input id="searchQuery" name="searchQuery" placeholder="Search courses" />
+                </div>
+            </form>
+        </div>     
 
         <div class="course-items">
             @if (Model.Courses != null)
             {
                 @foreach(var course in Model.Courses)
                 {
-                    <a asp-action="Details" asp-controller="Courses" asp-rout-id="@course.Id">
+                    <a class="course" asp-action="Details" asp-controller="Courses" asp-rout-id="@course.Id">
                         @if (course.IsBestseller)
                         {
                             <div class="bestseller">Best Seller</div>
