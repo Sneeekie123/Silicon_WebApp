@@ -526,7 +526,7 @@ form .input-group {
   display: grid;
 }
 form .input-group input {
-  padding: 11px;
+  padding: 15px;
 }
 form .checkbox-group input[type=checkbox] {
   margin-right: 10px;
@@ -543,8 +543,7 @@ form button {
 form .field-validation-error {
   font-size: 14px;
   font-weight: 400 !important;
-  color: var(--color-dager-dark);
-  padding: 2px 5px;
+  color: red;
 }
 
 .courses {
@@ -982,7 +981,7 @@ header .container .account-buttons .profile .profile-image form label {
   align-items: center;
 }
 .signin .container {
-  width: 35%;
+  width: 40%;
 }
 .signin .container form input {
   padding-top: 15px;
@@ -995,6 +994,7 @@ header .container .account-buttons .profile .profile-image form label {
   grid-template-areas: "email" "password" "remember" "submit";
 }
 .signin .container form .input-group label {
+  margin-top: 20px;
   padding: 3px;
 }
 .signin .container form .checkbox-group {
@@ -1008,6 +1008,7 @@ header .container .account-buttons .profile .profile-image form label {
 }
 .signin .container form #form-password {
   grid-area: password;
+  margin-top: 20px;
 }
 .signin .container form #form-password label {
   margin-top: 30px;
@@ -1034,6 +1035,9 @@ header .container .account-buttons .profile .profile-image form label {
   gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "firstname lastname" "email email" "password confirm" "terms terms" "submit submit";
+}
+.signup .container form .input-group input {
+  display: block;
 }
 .signup .container form .input-group label {
   padding: 3px;

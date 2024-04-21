@@ -9,16 +9,27 @@
 
         form {
 
+
+
             .form-content {
                 margin-top: 30px;
                 display: grid;
                 gap: 20px;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "firstname lastname" "email email" "password confirm" "terms terms" "submit submit";
+
+
+                
             }
 
             .input-group {
+               
+                
+                input {
+                    display: block;
+                }
                 label {
+                   
                     padding: 3px;
                 }
             }

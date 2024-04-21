@@ -20,29 +20,40 @@
 
             <div class="form-content">
                 <div id="form-firstname" class="input-group">
-                    <label asp-for="FirstName"></label>
+                    <div class="text-flex">
+                        <label asp-for="FirstName"></label>
+                        <span asp-validation-for="FirstName"></span>
+                    </div>
                     <input asp-for="FirstName">
-                    <span asp-validation-for="FirstName"></span>
+                   
                 </div>
                 <div id="form-lastname" class="input-group">
-                    <label asp-for="LastName"></label>
+                    <div class="text-flex">
+                        <label asp-for="LastName"></label>
+                        <span asp-validation-for="LastName"></span>
+                    </div>
                     <input asp-for="LastName">
-                    <span asp-validation-for="LastName"></span>
                 </div>
                 <div id="form-email" class="input-group">
-                    <label asp-for="Email"></label>
+                    <div class="text-flex">
+                        <label asp-for="Email"></label>
+                        <span asp-validation-for="Email"></span>
+                    </div>
                     <input asp-for="Email">
-                    <span asp-validation-for="Email"></span>
                 </div>
                 <div id="form-password" class="input-group">
-                    <label asp-for="Password"></label>
+                    <div class="text-flex">
+                        <label asp-for="Password"></label>
+                        <span asp-validation-for="Password"></span>
+                    </div>
                     <input asp-for="Password">
-                    <span asp-validation-for="Password"></span>
                 </div>
                 <div id="form-confirmpassword" class="input-group">
-                    <label asp-for="ConfirmPassword"></label>
+                    <div class="text-flex">
+                        <label asp-for="ConfirmPassword"></label>
+                        <span asp-validation-for="ConfirmPassword"></span>
+                    </div>
                     <input asp-for="ConfirmPassword">
-                    <span asp-validation-for="ConfirmPassword"></span>
                 </div>
 
                 <div id="form-checkbox" class="checkbox-group">

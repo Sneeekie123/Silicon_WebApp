@@ -6,7 +6,7 @@
     align-items: center;
 
     .container {
-        width: 35%;
+        width: 40%;
 
         form {
             input {
@@ -15,9 +15,11 @@
             }
 
             .content {
+                
             }
 
             #form-content {
+               
                 margin-top: 30px;
                 display: grid;
                 grid-template-columns: 1fr;
@@ -26,6 +28,7 @@
 
             .input-group {
                 label {
+                    margin-top: 20px;
                     padding: 3px;
                 }
             }
@@ -43,7 +46,7 @@
 
             #form-password {
                 grid-area: password;
-
+                margin-top: 20px;
                 label {
                     margin-top: 30px;
                 }

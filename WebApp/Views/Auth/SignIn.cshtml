@@ -21,11 +21,17 @@
             <div class="content">
 
                 <div id="form-content" class="input-group">
-                    <label asp-for="Email"></label>
+                    <div class="text-flex">
+                        <label asp-for="Email"></label>
+                        <span asp-validation-for="Email"></span>
+                    </div>
                     <input asp-for="Email">
                 </div>
                 <div id="form-password" class="input-group">
-                    <label asp-for="Password"></label>
+                    <div class="text-flex">
+                        <label asp-for="Password"></label>
+                        <span asp-validation-for="Password"></span>
+                    </div>
                     <input asp-for="Password">
                 </div>
 

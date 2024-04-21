@@ -82,9 +82,9 @@ form {
 
     .input-group {
         display: grid;
-
+        
         input {
-            padding: 11px;
+            padding: 15px;
         }
     }
 
@@ -98,8 +98,6 @@ form {
             display: flex;
             align-items: center;
         }
-
-       
     }
 
     button {
@@ -108,12 +106,16 @@ form {
         width: 100%;
     }
 
-    .field-validation-error{
-        font-size: 14px;
-        font-weight: 400 !important;
-        color: var(--color-dager-dark);
-        padding: 2px 5px;
+    label {
+        
     }
 
-   
+    .field-validation-error {
+        font-size: 14px;
+        font-weight: 400 !important;
+        color: red;
+        
+    }
 }
+
+
